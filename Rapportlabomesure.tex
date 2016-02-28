@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \begin{document}
 \title{Rapport laboratoire de mesure}
@@ -27,32 +28,73 @@ C'est pourquoi, la mesure ne peut s'effectuer directement avec un ohmètre.L'uti
 
 \chapter{Liste du matériel}
 \begin{itemize}
-\item 8 jauges de déformations (type FCA-5-23)
-\item un corps d'épreuve (diabolo en aluminium)
-\item 5 charges experimentales de masse connue
-\item un générateur de courant continu (5V)
-\item Matériel d'acquisition (Ordinateur avec software dédié)
-\item une Balance à levier
+\item poids 
+\item corps d'épreuve
 \end{itemize}	
 
-\chapter{Procédure expérimentale}
+\chapter{Procédure}
 
-(mettre le dessin)
-
-\begin{enumerate}
-\item Réquilibrer le pont de Wheatsone
-\item Center le corps d'épreuve sous la bille qui permet d'appliquer la charge.
-\item Deposer la charge sur le plateau.
-\item Relever la différence de potentiel affichée à l'écran
-\item Relever la valeur de la masse affchée
-\item Repeter les opétration 2 à 5 en augmentant la valeur de la charge par pas de 500g en veillant à ne pas déposer une charge de 5kg
-\item Repeter la procédure pour des centrage de l'application de la masse différente
-\end{enumerate}
-Il est important de rester délicat avec la matériel lors du changement de masse ou du changement de centrage d'application de la force, Sous peine de faussé les mesures suivantes
 \chapter{Mesures \& observations}
-\section{Graphique}
-\section{Tableau de valeurs}
 
+\section{Graphique}
+\begin{center}
+~\\
+Tension en fonction de la masse lorsque la contrainte est centrée
+\includegraphics[scale=1]{Graphique1.png} ~\\~\\~\\~\\~\\~\\
+Ecart relatif de la masse par rapport à la valeur de la masse lorsque la contrainte est centrée
+\includegraphics[scale=0.4]{Graphique2.png} ~\\
+\end{center}
+
+\section{Tableau de valeurs}
+\begin{table}[]
+\centering
+\caption{Relevé des masses observées}
+\label{my-label}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{036400} 
+\cellcolor[HTML]{963400}{\color[HTML]{FFFFFF} N}        & \cellcolor[HTML]{963400}{\color[HTML]{FFFFFF} N} & {\color[HTML]{FFFFFF} Masse G2} & {\color[HTML]{FFFFFF} Masse G1} & {\color[HTML]{FFFFFF} Masse C}  & {\color[HTML]{FFFFFF} Masse D1} & {\color[HTML]{FFFFFF} Masse G2} \\ \hline
+\rowcolor[HTML]{E7F7E7} 
+\cellcolor[HTML]{FFECE2}{\color[HTML]{963400} {[}kg{]}} & \cellcolor[HTML]{FFECE2}{\color[HTML]{963400} }  & {\color[HTML]{036400} {[}kg{]}} & {\color[HTML]{036400} {[}kg{]}} & {\color[HTML]{036400} {[}kg{]}} & {\color[HTML]{036400} {[}kg{]}} & {\color[HTML]{036400} {[}kg{]}} \\ \hline
+{\color[HTML]{963400} 0,584}                            & {\color[HTML]{963400} 4}                         & {\color[HTML]{036400} 0,500}    & {\color[HTML]{036400} 0,494}    & {\color[HTML]{036400} 0,512}    & {\color[HTML]{036400} 0,506}    & {\color[HTML]{036400} 0,512}    \\ \hline
+{\color[HTML]{963400} 1,050}                            & {\color[HTML]{963400} 6}                         & {\color[HTML]{036400} 0,878}    & {\color[HTML]{036400} 0,884}    & {\color[HTML]{036400} 0,878}    & {\color[HTML]{036400} 0,884}    & {\color[HTML]{036400} 0,890}    \\ \hline
+{\color[HTML]{963400} 1,056}                            & {\color[HTML]{963400} 5}                         & {\color[HTML]{036400} 0,884}    & {\color[HTML]{036400} 0,884}    & {\color[HTML]{036400} 0,896}    & {\color[HTML]{036400} 0,914}    & {\color[HTML]{036400} 0,914}    \\ \hline
+{\color[HTML]{963400} 1,063}                            & {\color[HTML]{963400} 7}                         & {\color[HTML]{036400} 0,890}    & {\color[HTML]{036400} 0,896}    & {\color[HTML]{036400} 0,902}    & {\color[HTML]{036400} 0,908}    & {\color[HTML]{036400} 0,926}    \\ \hline
+{\color[HTML]{963400} 1,640}                            & {\color[HTML]{963400} 4+5}                       & {\color[HTML]{036400} 1,370}    & {\color[HTML]{036400} 1,364}    & {\color[HTML]{036400} 1,400}    & {\color[HTML]{036400} 1,394}    & {\color[HTML]{036400} 1,412}    \\ \hline
+{\color[HTML]{963400} 1,964}                            & {\color[HTML]{963400} 9}                         & {\color[HTML]{036400} 1,610}    & {\color[HTML]{036400} 1,628}    & {\color[HTML]{036400} 1,664}    & {\color[HTML]{036400} 1,658}    & {\color[HTML]{036400} 1,688}    \\ \hline
+{\color[HTML]{963400} 2,690}                            & {\color[HTML]{963400} 4+5+6}                     & {\color[HTML]{036400} 2,246}    & {\color[HTML]{036400} 2,258}    & {\color[HTML]{036400} 2,276}    & {\color[HTML]{036400} 2,276}    & {\color[HTML]{036400} 2,300}    \\ \hline
+{\color[HTML]{963400} 3,020}                            & {\color[HTML]{963400} 5+9}                       & {\color[HTML]{036400} 2,504}    & {\color[HTML]{036400} 2,504}    & {\color[HTML]{036400} 2,546}    & {\color[HTML]{036400} 2,540}    & {\color[HTML]{036400} 2,576}    \\ \hline
+{\color[HTML]{963400} 3,604}                            & {\color[HTML]{963400} 5+9+4}                     & {\color[HTML]{036400} 2,966}    & {\color[HTML]{036400} 2,996}    & {\color[HTML]{036400} 3,020}    & {\color[HTML]{036400} 3,044}    & {\color[HTML]{036400} 3,068}    \\ \hline
+{\color[HTML]{963400} 4,077}                            & {\color[HTML]{963400} 6+7+9}                     & {\color[HTML]{036400} 3,380}    & {\color[HTML]{036400} 3,380}    & {\color[HTML]{036400} 3,416}    & {\color[HTML]{036400} 3,434}    & {\color[HTML]{036400} 3,458}    \\ \hline
+{\color[HTML]{963400} 4,661}                            & {\color[HTML]{963400} 6+7+9+4}                   & {\color[HTML]{036400} 3,854}    & {\color[HTML]{036400} 3,860}    & {\color[HTML]{036400} 3,902}    & {\color[HTML]{036400} 3,932}    & {\color[HTML]{036400} 3,956}    \\ \hline
+{\color[HTML]{963400} 5,133}                            & {\color[HTML]{963400} 6+7+9+5}                   & {\color[HTML]{036400} 4,238}    & {\color[HTML]{036400} 4,250}    & {\color[HTML]{036400} 4,292}    & {\color[HTML]{036400} 4,316}    & {\color[HTML]{036400} 4,340}    \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{Relevé des différences de potentiel observées}
+\label{my-label}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{2A2AA1} 
+\cellcolor[HTML]{963400}{\color[HTML]{FFFFFF} N}        & \cellcolor[HTML]{963400}{\color[HTML]{FFFFFF} N} & {\color[HTML]{FFFFFF} Tension G2} & {\color[HTML]{FFFFFF} Tension G1} & {\color[HTML]{FFFFFF} Tension C} & {\color[HTML]{FFFFFF} Tension D1} & {\color[HTML]{FFFFFF} Tension D2} \\ \hline
+\rowcolor[HTML]{DDDDFF} 
+\cellcolor[HTML]{FFECE2}{\color[HTML]{963400} {[}kg{]}} & \cellcolor[HTML]{FFECE2}{\color[HTML]{963400} }  & {\color[HTML]{2A2AA1} {[}mV{]}}   & {\color[HTML]{2A2AA1} {[}mV{]}}   & {\color[HTML]{2A2AA1} {[}mV{]}}  & {\color[HTML]{2A2AA1} {[}mV{]}}   & {\color[HTML]{2A2AA1} {[}mV{]}}   \\ \hline
+{\color[HTML]{963400} 0,584}                            & {\color[HTML]{963400} 4}                         & {\color[HTML]{00009B} 0,083}      & {\color[HTML]{00009B} 0,082}      & {\color[HTML]{00009B} 0,085}     & {\color[HTML]{00009B} 0,084}      & {\color[HTML]{00009B} 0,085}      \\ \hline
+{\color[HTML]{963400} 1,050}                            & {\color[HTML]{963400} 6}                         & {\color[HTML]{00009B} 0,146}      & {\color[HTML]{00009B} 0,147}      & {\color[HTML]{00009B} 0,146}     & {\color[HTML]{00009B} 0,147}      & {\color[HTML]{00009B} 0,148}      \\ \hline
+{\color[HTML]{963400} 1,056}                            & {\color[HTML]{963400} 5}                         & {\color[HTML]{00009B} 0,147}      & {\color[HTML]{00009B} 0,147}      & {\color[HTML]{00009B} 0,149}     & {\color[HTML]{00009B} 0,152}      & {\color[HTML]{00009B} 0,151}      \\ \hline
+{\color[HTML]{963400} 1,063}                            & {\color[HTML]{963400} 7}                         & {\color[HTML]{00009B} 0,148}      & {\color[HTML]{00009B} 0,149}      & {\color[HTML]{00009B} 0,150}     & {\color[HTML]{00009B} 0,151}      & {\color[HTML]{00009B} 0,154}      \\ \hline
+{\color[HTML]{963400} 1,640}                            & {\color[HTML]{963400} 4+5}                       & {\color[HTML]{00009B} 0,228}      & {\color[HTML]{00009B} 0,227}      & {\color[HTML]{00009B} 0,233}     & {\color[HTML]{00009B} 0,232}      & {\color[HTML]{00009B} 0,235}      \\ \hline
+{\color[HTML]{963400} 1,964}                            & {\color[HTML]{963400} 9}                         & {\color[HTML]{00009B} 0,268}      & {\color[HTML]{00009B} 0,271}      & {\color[HTML]{00009B} 0,277}     & {\color[HTML]{00009B} 0,276}      & {\color[HTML]{00009B} 0,281}      \\ \hline
+{\color[HTML]{963400} 2,690}                            & {\color[HTML]{963400} 4+5+6}                     & {\color[HTML]{00009B} 0,374}      & {\color[HTML]{00009B} 0,376}      & {\color[HTML]{00009B} 0,379}     & {\color[HTML]{00009B} 0,379}      & {\color[HTML]{00009B} 0,383}      \\ \hline
+{\color[HTML]{963400} 3,020}                            & {\color[HTML]{963400} 5+9}                       & {\color[HTML]{00009B} 0,416}      & {\color[HTML]{00009B} 0,417}      & {\color[HTML]{00009B} 0,424}     & {\color[HTML]{00009B} 0,423}      & {\color[HTML]{00009B} 0,429}      \\ \hline
+{\color[HTML]{963400} 3,604}                            & {\color[HTML]{963400} 5+9+4}                     & {\color[HTML]{00009B} 0,494}      & {\color[HTML]{00009B} 0,499}      & {\color[HTML]{00009B} 0,502}     & {\color[HTML]{00009B} 0,507}      & {\color[HTML]{00009B} 0,511}      \\ \hline
+{\color[HTML]{963400} 4,077}                            & {\color[HTML]{963400} 6+7+9}                     & {\color[HTML]{00009B} 0,563}      & {\color[HTML]{00009B} 0,563}      & {\color[HTML]{00009B} 0,569}     & {\color[HTML]{00009B} 0,572}      & {\color[HTML]{00009B} 0,576}      \\ \hline
+{\color[HTML]{963400} 4,661}                            & {\color[HTML]{963400} 6+7+9+4}                   & {\color[HTML]{00009B} 0,642}      & {\color[HTML]{00009B} 0,643}      & {\color[HTML]{00009B} 0,650}     & {\color[HTML]{00009B} 0,654}      & {\color[HTML]{00009B} 0,659}      \\ \hline
+{\color[HTML]{963400} 5,133}                            & {\color[HTML]{963400} 6+7+9+5}                   & {\color[HTML]{00009B} 0,706}      & {\color[HTML]{00009B} 0,708}      & {\color[HTML]{00009B} 0,715}     & {\color[HTML]{00009B} 0,718}      & {\color[HTML]{00009B} 0,723}      \\ \hline
+\end{tabular}
+\end{table}
 	
 \chapter{Interpretation}	
 \chapter{Conclusion}	
