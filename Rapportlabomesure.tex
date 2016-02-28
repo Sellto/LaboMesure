@@ -10,15 +10,15 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \begin{document}
 \title{Rapport laboratoire de mesure}
-\chapter{Définition}	
-\section{But}
+\section*{Définition}	
+\subsection*{But}
 
 Le but de cette manipulation est d'analyser l'influence d'une charge placée sur une balance et sur le pont de Wheatstone via des capteurs de déformations.La Jauge de déformation a donc pour but de traduire la déformation d'une pièce en variation de résistance électrique.Les différentes grandeurs d'influences devra ainsi être analysées comme l'excentration de la charge sur la mesure et de manière théorique, l'influence de la température sur le système.
-\section{Hypothèse}
+\subsection*{Hypothèse}
 
-\subsection{Formule1}
-\subsection{Formule2}
-\section{Schema fonctionnel}
+\subsubsection*{Formule1}
+\subsubsection*{Formule2}
+\subsection*{Schema fonctionnel}
 \begin{center}
 \includegraphics[scale=0.5]{image1.jpg} 
 \end{center}
@@ -26,30 +26,48 @@ Le but de cette manipulation est d'analyser l'influence d'une charge placée sur
 Losqu'on applique un effort F au capteur, un champ de contrainte apparait et donc des déformations apparaissent.Le corps d'épreuve est en effet soumis à allongement suivant l'axe radial du fait par compression(Loi de Hooke) d'une autre part nous avons un allongement suivant l'axe latéral qui va rétrécir le diamètre de la pièce (Coefficient de Poisson) Grâce à la loi de Pouillet , nous pourrons connaitre la variation de la résistance dans le fil.Nous pouvons négligé la résistivité ainsi que le volume. On introduit alors K qui est le facteur de jauge qui caractérise la variation résistance en fonction de sa déformation axiale.Nous avons ici de très petites variations de résistance.
 C'est pourquoi, la mesure ne peut s'effectuer directement avec un ohmètre.L'utilisation d'un pont de Wheatstone va permettre de mesurer de telles variations.Soit, un circuit constitué de 4 résistances montées en pont dans lequel on l'a alimenté sous une tension de 5V. A l'équilibre la tension de sortie est nulle mais la variation d'une quelconque des résistances va faire apparaître une différence de potentiel.La tension de sortie est donc proportionnel aux variations relatives deltaR/R de chacune des résistances. 
 
-\chapter{Liste du matériel}
+\section*{Liste du matériel}
 \begin{itemize}
 \item poids 
 \item corps d'épreuve
+\item huit jauges de déformations (type FCA-5-23)
+\item un corps d'épreuve (diabolo en aluminium)
+\item cinq charges experimentales de masse connue
+\item un générateur de courant continu (5V)
+\item Matériel d'acquisition (Ordinateur avec software dédié)   une Balance à levier
 \end{itemize}	
 
-\chapter{Procédure}
+\section*{Procédure}
+\begin{center}
+\includegraphics[scale=0.3]{Montage.jpg}
+\end{center}
+\begin{enumerate}
+\item Réquilibrer le pont de Wheatsone
+\item Center le corps d'épreuve sous la bille qui permet d'appliquer la charge.
+\item Deposer la charge sur le plateau.
+\item Relever la différence de potentiel affichée à l'écran
+\item Relever la valeur de la masse affichée
+\item Repeter les opétration 2 à 5 en augmentant la valeur de la charge par pas de 500g en veillant à ne pas déposer une charge de 5kg
+\item Repeter la procédure pour des centrage de l'application de la masse différente
+\end{enumerate} 
 
-\chapter{Mesures \& observations}
 
-\section{Graphique}
+Il est important de rester délicat avec la matériel lors du changement de masse ou du changement de centrage d'application de la force, Sous peine de fausser les mesures suivantes
+\newpage
+\section*{Mesures \& observations}
+\subsection*{Graphique}
 \begin{center}
 ~\\
-Tension en fonction de la masse lorsque la contrainte est centrée
+Tension en fonction de la masse lorsque la contrainte est centrée~\\
 \includegraphics[scale=1]{Graphique1.png} ~\\~\\~\\~\\~\\~\\
-Ecart relatif de la masse par rapport à la valeur de la masse lorsque la contrainte est centrée
+Ecart relatif de la masse par rapport à la valeur de la masse lorsque la contrainte est centrée~\\
 \includegraphics[scale=0.4]{Graphique2.png} ~\\
 \end{center}
-
-\section{Tableau de valeurs}
-\begin{table}[]
-\centering
-\caption{Relevé des masses observées}
-\label{my-label}
+\newpage
+\subsection*{Tableau de valeurs}
+\begin{center}
+~\\
+Masse observée en fonction de la masse appliquée et de la position de la contrainte
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 \rowcolor[HTML]{036400} 
@@ -69,12 +87,8 @@ Ecart relatif de la masse par rapport à la valeur de la masse lorsque la contra
 {\color[HTML]{963400} 4,661}                            & {\color[HTML]{963400} 6+7+9+4}                   & {\color[HTML]{036400} 3,854}    & {\color[HTML]{036400} 3,860}    & {\color[HTML]{036400} 3,902}    & {\color[HTML]{036400} 3,932}    & {\color[HTML]{036400} 3,956}    \\ \hline
 {\color[HTML]{963400} 5,133}                            & {\color[HTML]{963400} 6+7+9+5}                   & {\color[HTML]{036400} 4,238}    & {\color[HTML]{036400} 4,250}    & {\color[HTML]{036400} 4,292}    & {\color[HTML]{036400} 4,316}    & {\color[HTML]{036400} 4,340}    \\ \hline
 \end{tabular}
-\end{table}
-
-\begin{table}[]
-\centering
-\caption{Relevé des différences de potentiel observées}
-\label{my-label}
+~\\~\\~\\~\\~\\
+Différence de potentielle en fonction de la masse appliquée et de la position de la contrainte~\\
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 \rowcolor[HTML]{2A2AA1} 
@@ -93,12 +107,12 @@ Ecart relatif de la masse par rapport à la valeur de la masse lorsque la contra
 {\color[HTML]{963400} 4,077}                            & {\color[HTML]{963400} 6+7+9}                     & {\color[HTML]{00009B} 0,563}      & {\color[HTML]{00009B} 0,563}      & {\color[HTML]{00009B} 0,569}     & {\color[HTML]{00009B} 0,572}      & {\color[HTML]{00009B} 0,576}      \\ \hline
 {\color[HTML]{963400} 4,661}                            & {\color[HTML]{963400} 6+7+9+4}                   & {\color[HTML]{00009B} 0,642}      & {\color[HTML]{00009B} 0,643}      & {\color[HTML]{00009B} 0,650}     & {\color[HTML]{00009B} 0,654}      & {\color[HTML]{00009B} 0,659}      \\ \hline
 {\color[HTML]{963400} 5,133}                            & {\color[HTML]{963400} 6+7+9+5}                   & {\color[HTML]{00009B} 0,706}      & {\color[HTML]{00009B} 0,708}      & {\color[HTML]{00009B} 0,715}     & {\color[HTML]{00009B} 0,718}      & {\color[HTML]{00009B} 0,723}      \\ \hline
+
 \end{tabular}
-\end{table}
-	
-\chapter{Interpretation}	
-\chapter{Conclusion}	
-\chapter{Annexe}	
+\end{center}
+\section*{Interpretation}	
+\section*{Conclusion}	
+\section*{Annexe}	
 
 
 
