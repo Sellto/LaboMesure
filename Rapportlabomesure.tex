@@ -9,8 +9,37 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \begin{document}
+\tableofcontents
 \title{Rapport laboratoire de mesure}
-\section*{Définition}	
+\part{Notion Théorique}
+\chapter{Schema fonctionnel}
+\begin{center}
+\includegraphics[scale=0.5]{image1.jpg} 
+\end{center}
+
+Lorsqu'on applique un effort F au capteur, un champ de contrainte apparait et donc des déformations apparaissent.Le corps d'épreuve est en effet soumis à allongement négatif suivant l'axe axial du fait de la compression(Loi de Hooke) d'une autre part nous avons un allongement suivant l'axe radial qui va agrandir le diamètre de la pièce (Coefficient de Poisson) Grâce à la loi de Pouillet , nous pourrons connaitre la variation de la résistance dans la jauge (un fil). En effet, lors des déformations de la pièce, la jauge se déforme également et donc modifie sa résistance (Annexe...). Nous pouvons négligé la résistivité ainsi que le volume. On introduit alors K qui est le facteur de jauge qui caractérise la variation de résistance en fonction de sa déformation axiale. Nous avons ici de très petites variations de résistance.
+C'est pourquoi, la mesure ne peut s'effectuer directement avec un ohmètre. La première idée était d'utiliser un diviseur de tension (1 jauge / 1 resistance) mais afin d'annuler l'influence de la température sur la mesure nous utiliserons plutôt un pont de Wheatstone (2jauges / 2 résistances). Par ailleurs, on ne peut introduire deux jauges (pour corriger la tempèrature) que si celle si sont placées perpendiculairement (afin de conserver notre mesure de déformation, les deux jauges se déformant différemment avec un facteur $\mu$). L'utilisation d'un pont de Wheatstone, soit un circuit constitué de 4 résistances montées en pont et alimenté sous une tension de 5V ( Celle-ci ne peut être supérieur car même si la température dûe à l'effet Joule (Annexe...) n'est pas prise en compte dans nos mesures, elle pourrait décoler la jauge). A l'équilibre (pas de charge appliquée) la tension de sortie est nulle. Cependant, la variation d'une quelconque résistance dûe à la charge va faire apparaître une différence de potentiel. La tension de sortie est donc proportionnel aux variations relatives dR/R de chacunes des résistances. 
+
+\chapter{Equation qui lie la tension v à la valeur des résistances des branches du pont}
+$v_{A} = \dfrac{E_{S}(R^{'}_{2}+R_{2})}{(R^{'}_{1}+R_{1})+(R^{'}_{2}+R_{2})} [1]$ 
+
+$v_{B} = \dfrac{E_{S}(R^{'}_{4}+R_{4})}{(R^{'}_{3}+R_{3})+(R^{'}_{4}+R_{4})} [2]$
+
+$v = v_{A} - v_{B} = \dfrac{E_{S}((R^{'}_{3}+R_{3})(R^{'}_{2}+R_{2})-(R^{'}_{1}+R_{1})(R^{'}_{4}+R_{4}))}{((R^{'}_{1}+R_{1})+(R^{'}_{2}+R_{2}))((R^{'}_{3}+R_{3})+(R^{'}_{4}+R_{4}))}$ 
+\subsubsection*{Calcul de la sollicitation de la jauge}
+$\epsilon = \dfrac{dL}{L} ; \rho = \dfrac{mg}{S} \Rightarrow \epsilon = \dfrac{\rho}{E}$ où E est le module de Young 
+$\dfrac{dD}{D} = - \mu \epsilon = - \mu \dfrac{\rho}{E}$
+\subsubsection{Loi de Pouillet}
+$R = \rho \dfrac{L}{S} et S  = \dfrac{V}{L} \Rightarrow R = \rho \dfrac{L^{2}}{V}$ 
+\subsubsection{Calcul du facteur de jauge k}
+$\dfrac{d(\dfrac{\rho L^{2}}{V})}{\dfrac{\rho L^{2}}{V}} = \dfrac{dR}{R} = \dfrac{d\rho}{\rho} + \dfrac{2dL}{L}+\dfrac{dV}{V}  =  \dfrac{2dL}{L} \Rightarrow$ où k = 2
+~\\~\\
+$d\rho$ et $dV$ sont nulles d'après les hypothèses posées précédemment.~\\
+\subsubsection{Finalement,}
+$v_{A} = \dfrac{2.E_{S}}{•}$
+
+\paragraph{Rajouter Image pont}
+\part{Experimentation}
 \subsection*{But}
 
 Le but de cette manipulation est d'analyser l'influence d'une charge placée sur une balance et sur le pont de Wheatstone via des capteurs de déformations.La Jauge de déformation a donc pour but de traduire la déformation d'une pièce en variation de résistance électrique.Les différentes grandeurs d'influences devra ainsi être analysées comme l'excentration de la charge sur la mesure et de manière théorique, l'influence de la température sur le système.
@@ -23,13 +52,6 @@ Le but de cette manipulation est d'analyser l'influence d'une charge placée sur
 \item On supposera le matériel de mesure fiable
 \item On supposera les masses bien étalonnées
 \end{itemize}	
-\subsection*{Schema fonctionnel}
-\begin{center}
-\includegraphics[scale=0.5]{image1.jpg} 
-\end{center}
-
-Lorsqu'on applique un effort F au capteur, un champ de contrainte apparait et donc des déformations apparaissent.Le corps d'épreuve est en effet soumis à allongement négatif suivant l'axe axial du fait de la compression(Loi de Hooke) d'une autre part nous avons un allongement suivant l'axe radial qui va agrandir le diamètre de la pièce (Coefficient de Poisson) Grâce à la loi de Pouillet , nous pourrons connaitre la variation de la résistance dans la jauge (un fil). En effet, lors des déformations de la pièce, la jauge se déforme également et donc modifie sa résistance (Annexe...). Nous pouvons négligé la résistivité ainsi que le volume. On introduit alors K qui est le facteur de jauge qui caractérise la variation de résistance en fonction de sa déformation axiale. Nous avons ici de très petites variations de résistance.
-C'est pourquoi, la mesure ne peut s'effectuer directement avec un ohmètre. La première idée était d'utiliser un diviseur de tension (1 jauge / 1 resistance) mais afin d'annuler l'influence de la température sur la mesure nous utiliserons plutôt un pont de Wheatstone (2jauges / 2 résistances). Par ailleurs, on ne peut introduire deux jauges (pour corriger la tempèrature) que si celle si sont placées perpendiculairement (afin de conserver notre mesure de déformation, les deux jauges se déformant différemment avec un facteur $\mu$). L'utilisation d'un pont de Wheatstone, soit un circuit constitué de 4 résistances montées en pont et alimenté sous une tension de 5V ( Celle-ci ne peut être supérieur car même si la température dûe à l'effet Joule (Annexe...) n'est pas prise en compte dans nos mesures, elle pourrait décoler la jauge). A l'équilibre (pas de charge appliquée) la tension de sortie est nulle. Cependant, la variation d'une quelconque résistance dûe à la charge va faire apparaître une différence de potentiel. La tension de sortie est donc proportionnel aux variations relatives dR/R de chacunes des résistances. 
 
 \section*{Liste du matériel}
 \begin{itemize}
@@ -41,7 +63,6 @@ C'est pourquoi, la mesure ne peut s'effectuer directement avec un ohmètre. La p
 \item un générateur de courant continu (5V)
 \item Matériel d'acquisition (Ordinateur avec software dédié)   une Balance à levier
 \end{itemize}	
-
 \section*{Procédure}
 \begin{center}
 \includegraphics[scale=0.3]{Montage.jpg}
@@ -117,25 +138,5 @@ Différence de potentielle en fonction de la masse appliquée et de la position 
 \end{center}
 \paragraph{Observation :} Nous avons constaté qu' au cours de l'expérimentation (après 45min) la valeur du zéro avait légèrement changée (+  0,001 mV pour la mesure de la tension). 
 \section*{Interpretation}	
-\section*{Conclusion}	
-\section*{Annexe}	
-\subsection*{Equation qui lie la tension v à la valeur des résistances des branches du pont}
-$v_{A} = \dfrac{E_{S}(R^{'}_{2}+R_{2})}{(R^{'}_{1}+R_{1})+(R^{'}_{2}+R_{2})} [1]$ 
-
-$v_{B} = \dfrac{E_{S}(R^{'}_{4}+R_{4})}{(R^{'}_{3}+R_{3})+(R^{'}_{4}+R_{4})} [2]$
-
-$v = v_{A} - v_{B} = \dfrac{E_{S}((R^{'}_{3}+R_{3})(R^{'}_{2}+R_{2})-(R^{'}_{1}+R_{1})(R^{'}_{4}+R_{4}))}{((R^{'}_{1}+R_{1})+(R^{'}_{2}+R_{2}))((R^{'}_{3}+R_{3})+(R^{'}_{4}+R_{4}))}$ 
-\subsubsection*{Calcul de la sollicitation de la jauge}
-$\epsilon = \dfrac{dL}{L} ; \rho = \dfrac{mg}{S} \Rightarrow \epsilon = \dfrac{\rho}{E}$ où E est le module de Young 
-$\dfrac{dD}{D} = - \mu \epsilon = - \mu \dfrac{\rho}{E}$
-\subsubsection{Loi de Pouillet}
-$R = \rho \dfrac{L}{S} et S  = \dfrac{V}{L} \Rightarrow R = \rho \dfrac{L^{2}}{V}$ 
-\subsubsection{Calcul du facteur de jauge k}
-$\dfrac{d(\dfrac{\rho L^{2}}{V})}{\dfrac{\rho L^{2}}{V}} = \dfrac{dR}{R} = \dfrac{d\rho}{\rho} + \dfrac{2dL}{L}+\dfrac{dV}{V}  =  \dfrac{2dL}{L} \Rightarrow$ où k = 2
-~\\~\\
-$d\rho$ et $dV$ sont nulles d'après les hypothèses posées précédemment.~\\
-\subsubsection{Finalement,}
-$v_{A} = \dfrac{2.E_{S}}{•}$
-
 
 \end{document}
