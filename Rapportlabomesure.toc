@@ -9,13 +9,9 @@
 \contentsline {subsection}{\numberline {2.2.1}2 jauges}{4}
 \contentsline {subsection}{\numberline {2.2.2}2 jauges perpendiculaires}{4}
 \contentsline {subsection}{\numberline {2.2.3}4 x 2 jauges perpendiculaires}{4}
-\contentsline {chapter}{\numberline {3}Equation qui lie la tension v \IeC {\`a} la valeur des r\IeC {\'e}sistances des branches du pont}{5}
-\contentsline {subsubsection}{Loi de Pouillet}{5}
-\contentsline {subsubsection}{Calcul du facteur de jauge k}{5}
-\contentsline {subsubsection}{Finalement,}{5}
-\contentsline {paragraph}{Rajouter Image pont}{5}
-\contentsline {part}{II\hspace {1em}Experimentation}{6}
-\contentsline {paragraph}{Observation :}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {paragraph}{}{10}
+\contentsline {chapter}{\numberline {3}lien entre tension et d\IeC {\'e}formation}{5}
+\contentsline {part}{II\hspace {1em}Experimentation}{7}
+\contentsline {paragraph}{Observation :}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
