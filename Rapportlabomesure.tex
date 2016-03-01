@@ -19,7 +19,17 @@
 
 Lorsqu'on applique un effort F au capteur, un champ de contrainte apparait et donc des déformations apparaissent.Le corps d'épreuve est en effet soumis à allongement négatif suivant l'axe axial du fait de la compression(Loi de Hooke) d'une autre part nous avons un allongement suivant l'axe radial qui va agrandir le diamètre de la pièce (Coefficient de Poisson) Grâce à la loi de Pouillet , nous pourrons connaitre la variation de la résistance dans la jauge (un fil). En effet, lors des déformations de la pièce, la jauge se déforme également et donc modifie sa résistance (Annexe...). Nous pouvons négligé la résistivité ainsi que le volume. On introduit alors K qui est le facteur de jauge qui caractérise la variation de résistance en fonction de sa déformation axiale. Nous avons ici de très petites variations de résistance.
 C'est pourquoi, la mesure ne peut s'effectuer directement avec un ohmètre. La première idée était d'utiliser un diviseur de tension (1 jauge / 1 resistance) mais afin d'annuler l'influence de la température sur la mesure nous utiliserons plutôt un pont de Wheatstone (2jauges / 2 résistances). Par ailleurs, on ne peut introduire deux jauges (pour corriger la tempèrature) que si celle si sont placées perpendiculairement (afin de conserver notre mesure de déformation, les deux jauges se déformant différemment avec un facteur $\mu$). L'utilisation d'un pont de Wheatstone, soit un circuit constitué de 4 résistances montées en pont et alimenté sous une tension de 5V ( Celle-ci ne peut être supérieur car même si la température dûe à l'effet Joule (Annexe...) n'est pas prise en compte dans nos mesures, elle pourrait décoler la jauge). A l'équilibre (pas de charge appliquée) la tension de sortie est nulle. Cependant, la variation d'une quelconque résistance dûe à la charge va faire apparaître une différence de potentiel. La tension de sortie est donc proportionnel aux variations relatives dR/R de chacunes des résistances. 
-
+\chapter{Montage}
+\section{Type de montage}
+\subsection{diviseur de tension}
+\subsection{Pont de Wheatsone}
+\section{Placement des jauges de déformation}
+\subsection{2 jauges}
+La température influence la résistivité de la jauge. l'origine de cette variation de chaleur pouvant être extérieur ou simplement dûe à effet joule au sein même de la jauge. L'utilisation d'une deuxième jauge placée a proximité et placée dans un montage en pont Wheastone permet de s'affranchir de l'influence de la temperature sur la mesure.
+\subsection{2 jauges perpendiculaires}
+Si l'on place les 2 jauges de manière perpendiculaires, on conserve notre mesure de déformation car les deux jauges se deforme différement.
+\subsection{4 x 2 jauges perpendiculaires}
+des couples de jauges perpendiculaires seront placées aux quatres points cardinaux du corps d'épreuve afin de reprendre correctement les charges et de ne pas prendre en compte le moment de force qui serait associer à une excentration de la contrainte
 \chapter{Equation qui lie la tension v à la valeur des résistances des branches du pont}
 $v_{A} = \dfrac{E_{S}(R^{'}_{2}+R_{2})}{(R^{'}_{1}+R_{1})+(R^{'}_{2}+R_{2})} [1]$ 
 

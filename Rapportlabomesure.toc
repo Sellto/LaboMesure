@@ -1,13 +1,21 @@
 \select@language {french}
 \contentsline {part}{I\hspace {1em}Notion Th\IeC {\'e}orique}{2}
 \contentsline {chapter}{\numberline {1}Schema fonctionnel}{3}
-\contentsline {chapter}{\numberline {2}Equation qui lie la tension v \IeC {\`a} la valeur des r\IeC {\'e}sistances des branches du pont}{4}
-\contentsline {subsubsection}{Loi de Pouillet}{4}
-\contentsline {subsubsection}{Calcul du facteur de jauge k}{4}
-\contentsline {subsubsection}{Finalement,}{4}
-\contentsline {paragraph}{Rajouter Image pont}{4}
-\contentsline {part}{II\hspace {1em}Experimentation}{5}
-\contentsline {paragraph}{Observation :}{9}
-\contentsline {paragraph}{}{9}
-\contentsline {paragraph}{}{9}
-\contentsline {paragraph}{}{9}
+\contentsline {chapter}{\numberline {2}Montage}{4}
+\contentsline {section}{\numberline {2.1}Type de montage}{4}
+\contentsline {subsection}{\numberline {2.1.1}diviseur de tension}{4}
+\contentsline {subsection}{\numberline {2.1.2}Pont de Wheatsone}{4}
+\contentsline {section}{\numberline {2.2}Placement des jauges de d\IeC {\'e}formation}{4}
+\contentsline {subsection}{\numberline {2.2.1}2 jauges}{4}
+\contentsline {subsection}{\numberline {2.2.2}2 jauges perpendiculaires}{4}
+\contentsline {subsection}{\numberline {2.2.3}4 x 2 jauges perpendiculaires}{4}
+\contentsline {chapter}{\numberline {3}Equation qui lie la tension v \IeC {\`a} la valeur des r\IeC {\'e}sistances des branches du pont}{5}
+\contentsline {subsubsection}{Loi de Pouillet}{5}
+\contentsline {subsubsection}{Calcul du facteur de jauge k}{5}
+\contentsline {subsubsection}{Finalement,}{5}
+\contentsline {paragraph}{Rajouter Image pont}{5}
+\contentsline {part}{II\hspace {1em}Experimentation}{6}
+\contentsline {paragraph}{Observation :}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
